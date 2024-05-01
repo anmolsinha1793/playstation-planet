@@ -1,15 +1,3 @@
 <app-header></app-header>
 <router-outlet />
-<div class="customize__slick">
-    <ngx-slick-carousel class="carousel" 
-    #slickModal="slick-carousel" 
-    [config]="slideConfig" >
-    @for (slide of slides; track slide.img) {
-    <div ngxSlickItem class="slide">
-    <img src="{{ slide.img }}" alt="" width="100%">
-    </div>
-    }
-    </ngx-slick-carousel>
-</div>
-
 <app-footer></app-footer>

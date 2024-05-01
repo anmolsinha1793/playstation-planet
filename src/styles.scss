@@ -9,3 +9,9 @@ body { margin: 0;   font-family: "Jersey 10";
     font-family: "Jersey 10";
     font-style: normal;
   }
+
+  .mat-toolbar.mat-primary {
+    background: rgb(16,16,16);
+    background: linear-gradient(151deg, rgba(16,16,16,1) 0%, rgba(144,15,0,1) 99%, rgba(252,0,6,1) 100%);
+    color: #fff;
+  }

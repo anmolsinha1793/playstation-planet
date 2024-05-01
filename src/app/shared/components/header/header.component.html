@@ -1,9 +1,15 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
         <div class="style__header__content">
-            <span>{{title | async}}</span>
+            <span class="cust__header">{{title | async}}</span>
         </div>
         <span class="example-spacer"></span>
-        <button mat-raised-button class="customize__goto__pokemon" color="accent">Contact us for prebooking</button>
+        @if(isHome) {
+            <button mat-raised-button class="customize__goto__pokemon" [routerLink]="['/prebooking-details']" color="accent">Contact us for prebooking</button>
+        } @else {
+            <button mat-raised-button class="customize__goto__pokemon" [routerLink]="['/home']" color="accent">Go Home</button>
+        }
+    
+        
     </mat-toolbar-row>
 </mat-toolbar>
