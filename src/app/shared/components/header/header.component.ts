@@ -25,7 +25,7 @@ export class HeaderComponent {
   }
   ngOnInit() {
     this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe((event: any) => {  
-      this.isHome = event.url.includes('home');  
+      this.isHome = event.url.includes('home') || event.url === '/';  
     });
   }
 }
